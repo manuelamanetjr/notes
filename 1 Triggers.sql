@@ -148,7 +148,7 @@ RAISE EXCEPTION 'X';
 
 
 //////////////////////////////////////////////////////////////////
-
+1.
 
 CREATE OR REPLACE FUNCTION prevent_delete_vendor()
 	RETURNS TRIGGER AS
@@ -173,5 +173,32 @@ CREATE TRIGGER trg_prevent_delete_vendor
 	EXECUTE FUNCTION prevent_delete_vendor();
 
 delete from vendor where V_CODE = 21225;
+
+///////////////////////////////////////////////////////////////////////
+2.
+CREATE OR REPLACE FUNCTION invoice_date()
+	RETURNS TRIGGER AS
+
+$$ 
+BEGIN
+	
+	UPDATE INVOICE SET INV_DATE = CURRENT_DATE 
+	WHERE INV_NUMBER = NEW.INV_NUMBER;
+	
+	RETURN NEW;
+
+END;
+
+$$ LANGUAGE PLPGSQL;
+
+CREATE TRIGGER trg_invoice_date
+	AFTER INSERT ON LINE 
+	FOR EACH ROW
+	EXECUTE FUNCTION invoice_date();
+
+INSERT INTO INVOICE VALUES(1008,10011,'17-JAN-2016');
+
+INSERT INTO LINE VALUES(1009,3,'23109-HB',1,9.95);
+
 
 
