@@ -147,23 +147,31 @@ IF OLD.V_CODE IN(SELECT * from VENDOR) THEN
 RAISE EXCEPTION 'X';
 
 
-/////////////////////////////////////////////
-CREATE OR REPLACE FUNCTION prevent_delete_vendor() RETURNS TRIGGER AS
+//////////////////////////////////////////////////////////////////
 
-$$ BEGIN
 
-IF OLD.V_CODE IN (SELECT V_CODE FROM PRODUCT) THEN RAISE EXCEPTION CANT DELETE CHUCHU';
+CREATE OR REPLACE FUNCTION prevent_delete_vendor()
+	RETURNS TRIGGER AS
 
-END IF;
+$$ 
+BEGIN
+	
+	IF OLD.V_CODE IN (SELECT V_CODE FROM  PRODUCT) THEN
+		RAISE EXCEPTION 'cANT DELETE CHUCHU';
+		
+	END IF;
 
-RETURN NEW;
+	RETURN NEW;
 
 END;
 
 $$ LANGUAGE PLPGSQL;
 
-CREATE TRIGGER trg_prevent_delete_vendor BEFORE DELETE ON VENDOR
-
-FOR EACH ROW EXECUTE FUNCTION prevent_delete_vendor();
+CREATE TRIGGER trg_prevent_delete_vendor
+	BEFORE DELETE ON VENDOR 
+	FOR EACH ROW
+	EXECUTE FUNCTION prevent_delete_vendor();
 
 delete from vendor where V_CODE = 21225;
+
+
