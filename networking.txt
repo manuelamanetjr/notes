@@ -1,0 +1,28 @@
+enable
+config t
+vtp mode transparent
+vlan 100
+name production
+vlan 2100
+name development
+vlan2100
+name guest
+
+int fa0/1
+switchport mode access 
+switchport access vlan 100
+int fa0/2
+switchport mode access 
+switchport access vlan 100
+
+
+int fa0/0
+no shutdown
+
+intfa0/24
+switchport mode trunk
+
+int fa0/0.2100
+encapsulation dot1q 2100
+ip add 192.168.2.1 255.255.255.0
+do wr

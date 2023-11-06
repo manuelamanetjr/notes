@@ -1,7 +1,0 @@
-int fa0/0
-no shutdown
-
-int fa0/0.2100
-encapsulation dot1q 2100
-ip add 192.168.2.1 255.255.255.0
-do wr
