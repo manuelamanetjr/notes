@@ -1,1 +1,1 @@
-Tirol SQL notes
+# CTU Notes
