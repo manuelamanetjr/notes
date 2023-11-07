@@ -15,6 +15,17 @@ int fa0/2
 switchport mode access 
 switchport access vlan 100
 
+int fa0/24(kung unsa tuh imoha geh connctsa rrouter to switch or switch yo router)
+
+Switchport mode trunk
+
+Switchport trunk allowed vlan add 100
+
+Switchport trunk allowed vlan add 1100
+
+Switchport trunk allowed vlan add 2100
+
+Do wr Exit
 
 int fa0/0
 no shutdown
@@ -26,3 +37,4 @@ int fa0/0.2100
 encapsulation dot1q 2100
 ip add 192.168.2.1 255.255.255.0
 do wr
+
