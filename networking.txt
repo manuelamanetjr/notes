@@ -1,3 +1,26 @@
+(* switch)
+vlan 10
+name student
+
+
+(switch to PC)
+Int fa0/2
+switchport mode access
+switchport access vlan 10
+
+(switch to switch)
+Switchport mode trunk
+Switchport trunk allowed vlan add 10
+
+(Router)
+int fa0/0.2100
+encapsulation dot1q 10
+ip add 192.168.10.1 255.255.255.0
+do wr
+
+
+####################################################
+
 enable
 config t
 vtp mode transparent
