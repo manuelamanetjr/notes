@@ -2,18 +2,4 @@
 
 https://000webhostamantejr.000webhostapp.com/
 
-
-World population growth
-Max Roser, Hannah Ritchie, Esteban Ortiz-Ospina, Lucas Rodés-Guirao
-Our world in data, 2013
-When and why did the world population grow? And how does rapid population growth come to an end? These are the big questions that are central to this research article.
-View at ourworldindata.org
-[PDF] govtgirlsekbalpur.com
-Cited by 849
-Related articles
-All 5 versions
-
-The interaction of population growth and environmental quality
-Maureen Cropper, Charles Griffiths
-The American Economic Review 84 (2), 250-254, 1994
-The study of interactions between population growth and the environment has a long history. According to Malthus, a growing population exerts pressure on agricultural land, forcing the cultivation of land of poorer and poorer quality. This environ-mental degradation (broadly defined) lowers the marginal product of labor and, through its effect on income, reduces the rate of population growth. The result is an equilibrium population that enjoys low levels of both income and environmental quality. The modern statement of this view replaces agricultural land with nonrenewable resources. In this model, natural resources impose a limit to economic growth, with population pressures reducing the marginal product of labor as scarce natural resources are exploited more intensively. A more recent theme in discussions of population growth and the environment is the importance of environmental quality per se, where environmental quality is measured by the stock of forests or by the absence of air and water pollution. In this view the environment is seen not as a factor that limits productivity as population expands, but as a good whose quality is degraded by a growing population. Population pressures, for example, are frequently cited as a cause of deforestation: population growth, by increasing the need for arable land, encourages the conversion of forest land to other uses. Population growth, because it places increased pressure on the assimilative capacity of the environment, is also viewed as a major cause of air, water, and solid-waste pollution. To some, the logical conclusion of these arguments is that population control is an important means of improving environmental quality. While there is no question that population growth contributes to environmental degradation, its effects can be modified by economic growth and modern technology. Consider, for example, two countries with rapid population growth and significant forest resources but with different levels of per capita income. The country with the higher income is likely to be deforesting less rapidly. As income grows, people will switch to energy sources other than firewood and will use modern agricultural techniques that reduce the demand for agricultural land. Similar effects are likely to be felt regarding pollution. As income grows, sanitation and waste-water treatment will improve, and pollution will be less of a problem at any level of population density. An important question for policy is whether, holding constant per capita income and other relevant factors, population pressures have a significant effect on environmental degradation. To the best of our knowledge there is little empirical evidence on this point. In this paper we take a first step toward providing such evidence. Specifically, we examine the effect of popu-lation pressures on deforestation in 64 developing countries. tDiscussants: Sudhir Anand, Harvard University; Sherman Robinson, Council of Economic Advisors; Robert Repetto, World Resources Institute.
+https://manuelamanetjr.github.io/Webdev_Activity/
