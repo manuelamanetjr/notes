@@ -1,0 +1,5 @@
+git clone --depth 1 https://github.com/supabase/supabase
+cd supabase/docker
+copy .env.example .env #cp for Linux
+docker compose up -d
+https://supabase.com/docs/guides/self-hosting/docker
